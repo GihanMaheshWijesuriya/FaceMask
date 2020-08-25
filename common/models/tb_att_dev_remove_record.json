@@ -1,0 +1,40 @@
+{
+  "name": "tb_att_dev_remove_record",
+  "plural": "tb_att_dev_remove_record",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "default": null
+    },
+    "device_id": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "device_mac": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "start_id": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "end_id": {
+      "type": "number",
+      "required": true,
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

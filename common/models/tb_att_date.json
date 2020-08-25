@@ -1,0 +1,25 @@
+{
+  "name": "tb_att_date",
+  "plural": "tb_att_date",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "type": {
+      "type": "number",
+      "required": true,
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

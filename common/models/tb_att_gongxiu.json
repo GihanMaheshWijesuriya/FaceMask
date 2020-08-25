@@ -1,0 +1,40 @@
+{
+  "name": "tb_att_gongxiu",
+  "plural": "tb_att_gongxiu",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "default": null
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "time": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "company_code": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "department_id": {
+      "type": "number",
+      "required": true,
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

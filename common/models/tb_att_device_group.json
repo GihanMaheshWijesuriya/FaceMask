@@ -1,0 +1,45 @@
+{
+  "name": "tb_att_device_group",
+  "plural": "tb_att_device_group",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "default": null
+    },
+    "name": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "device_count": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "company_code": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "department_id": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "att_flag": {
+      "type": "boolean",
+      "required": true,
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

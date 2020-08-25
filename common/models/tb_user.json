@@ -1,0 +1,71 @@
+{
+  "name": "tb_user",
+  "plural": "tb_user",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "default": null
+    },
+    "code": {
+      "type": "string",
+      "required": false
+    },
+    "section_code": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "menu_code": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "access_uri": {
+      "type": "string",
+      "required": true
+    },
+    "module": {
+      "type": "string",
+      "required": true
+    },
+    "access_url": {
+      "type": "string",
+      "required": true
+    },
+    "level": {
+      "type": "boolean",
+      "required": false,
+      "default": 0
+    },
+    "sort_order": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "title_zh": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "title_en": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "icon_tag": {
+      "type": "string",
+      "required": true,
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

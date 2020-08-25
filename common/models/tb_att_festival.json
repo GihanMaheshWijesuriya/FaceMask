@@ -1,0 +1,50 @@
+{
+  "name": "tb_att_festival",
+  "plural": "tb_att_festival",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "default": null
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "start_time": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "end_time": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "company_code": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "department_id": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "remark": {
+      "type": "string",
+      "required": true,
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

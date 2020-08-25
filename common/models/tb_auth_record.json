@@ -1,0 +1,62 @@
+{
+  "name": "tb_auth_record",
+  "plural": "tb_auth_record",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "default": null
+    },
+    "creat_user": {
+      "type": "string",
+      "required": false
+    },
+    "auth_type": {
+      "type": "number",
+      "required": false
+    },
+    "auth_state": {
+      "type": "number",
+      "required": false,
+      "default": 0
+    },
+    "creat_time": {
+      "type": "date",
+      "required": false
+    },
+    "company_code": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "department_id": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "emp_num": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "total_num": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "device_ids": {
+      "type": "string",
+      "required": true,
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

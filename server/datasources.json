@@ -1,0 +1,16 @@
+{
+  "db": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "database": "mips_temp",
+    "password": "19970326",
+    "name": "db",
+    "user": "root",
+    "connector": "mysql",
+    "connectionLimit": 100,
+    "maxOfflineRequests": 100,
+    "connectTimeout": 300000,
+    "createDatabase": true,
+    "max": 100
+  }
+}

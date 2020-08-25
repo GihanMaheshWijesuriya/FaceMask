@@ -1,0 +1,55 @@
+{
+  "name": "tb_att_record",
+  "plural": "tb_att_record",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "default": null
+    },
+    "first_time": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "last_time": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "status": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "overtime_hours": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "vip_id": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "date": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "temp": {
+      "type": "string",
+      "required": true,
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

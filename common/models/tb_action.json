@@ -1,0 +1,102 @@
+{
+  "name": "tb_action",
+  "plural": "tb_action",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "default": null
+    },
+    "login_id": {
+      "type": "string",
+      "required": false
+    },
+    "password": {
+      "type": "string",
+      "required": false
+    },
+    "gmt_created": {
+      "type": "date",
+      "required": false,
+      "default": "1970-01-01 00:00:00"
+    },
+    "gmt_modified": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "belong_to": {
+      "type": "boolean",
+      "required": false,
+      "default": 1
+    },
+    "role_type": {
+      "type": "boolean",
+      "required": false,
+      "default": 1
+    },
+    "mobile": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "company_code": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "department_id": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "gmt_blocked": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "gmt_deleted": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "creator_login_id": {
+      "type": "string",
+      "required": false
+    },
+    "modifier_login_id": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "gmt_last_login": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "open_id": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "gmt_logout": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "page_numbers": {
+      "type": "string",
+      "required": true,
+      "default": "10_0,10_0,10,10,10,10,10_0,10,10,10,10,10,10,10"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

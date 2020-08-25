@@ -1,0 +1,173 @@
+{
+  "name": "tb_company_balance",
+  "plural": "tb_company_balance",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Id": {
+      "type": "number",
+      "id": true
+    },
+    "company_code": {
+      "type": "string",
+      "required": false
+    },
+    "resource_package_id": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "storage_max": {
+      "type": "number",
+      "required": false,
+      "default": 0,
+      "supportBigNumbers": true,
+      "mysql": {
+        "columnName": "storage_max",
+        "dataType": "BIGINT UNSIGNED"
+      }
+    },
+    "storage_used": {
+      "type": "number",
+      "required": false,
+      "default": 0,
+      "supportBigNumbers": true,
+      "mysql": {
+        "columnName": "storage_used",
+        "dataType": "BIGINT UNSIGNED"
+      }
+    },
+    "storage_free": {
+      "type": "number",
+      "required": false,
+      "default": 0,
+      "supportBigNumbers": true,
+      "mysql": {
+        "columnName": "storage_free",
+        "dataType": "BIGINT"
+      }
+    },
+    "bandwidth": {
+      "type": "number",
+      "required": false,
+      "default": 0,
+      "mysql": {
+        "columnName": "Id",
+        "dataType": "integer UNSIGNED"
+      }
+    },
+    "adv_max": {
+      "type": "number",
+      "required": false,
+      "default": 0,
+      "mysql": {
+        "columnName": "adv_max",
+        "dataType": "integer UNSIGNED"
+      }
+    },
+    "adv_used": {
+      "type": "number",
+      "required": false,
+      "default": 0,
+      "mysql": {
+        "columnName": "adv_used",
+        "dataType": "integer UNSIGNED"
+      }
+    },
+    "adv_free": {
+      "type": "number",
+      "required": false,
+      "default": 0
+    },
+    "vm_max": {
+      "type": "number",
+      "required": false,
+      "default": 0,
+      "mysql": {
+        "columnName": "vm_max",
+        "dataType": "integer UNSIGNED"
+      }
+    },
+    "vm_used": {
+      "type": "number",
+      "required": false,
+      "default": 0,
+      "mysql": {
+        "columnName": "vm_used",
+        "dataType": "integer UNSIGNED"
+      }
+    },
+    "vm_free": {
+      "type": "number",
+      "required": false,
+      "default": 0
+    },
+    "fw_max": {
+      "type": "number",
+      "required": false,
+      "default": 0,
+      "supportBigNumbers": true,
+      "mysql": {
+        "columnName": "fw_max",
+        "dataType": "BIGINT UNSIGNED"
+      }
+    },
+    "fw_used": {
+      "type": "number",
+      "required": false,
+      "default": 0,
+      "supportBigNumbers": true,
+      "mysql": {
+        "columnName": "fw_used",
+        "dataType": "BIGINT UNSIGNED"
+      }
+    },
+    "fw_free": {
+      "type": "number",
+      "required": false,
+      "default": 0,
+      "supportBigNumbers": true,
+      "mysql": {
+        "columnName": "fw_free",
+        "dataType": "BIGINT UNSIGNED"
+      }
+    },
+    "img_limit": {
+      "type": "number",
+      "required": false,
+      "default": 0
+    },
+    "video_limit": {
+      "type": "number",
+      "required": false,
+      "default": 0
+    },
+    "expire_date": {
+      "type": "date",
+      "required": false,
+      "default": "1970-01-01 00:00:00"
+    },
+    "gmt_created": {
+      "type": "date",
+      "required": false,
+      "default": "1970-01-01 00:00:00"
+    },
+    "gmt_modified": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "status": {
+      "type": "boolean",
+      "required": false,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

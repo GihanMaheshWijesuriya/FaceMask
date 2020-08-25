@@ -1,0 +1,70 @@
+{
+  "name": "tb_att_banci",
+  "plural": "tb_att_banci",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "default": null
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "emp_num": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "banduan_a": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "banduan_b": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "banduan_c": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "banduan_d": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "company_code": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "department_id": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "overtime_rule": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "default_flag": {
+      "type": "number",
+      "required": true,
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

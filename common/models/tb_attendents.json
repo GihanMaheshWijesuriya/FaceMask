@@ -1,0 +1,70 @@
+{
+  "name": "tb_attendents",
+  "plural": "tb_attendents",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "mac": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "checkTime": {
+      "type": "number",
+      "supportBigNumbers": true,
+      "mysql": {
+        "columnName": "storage_used",
+        "dataType": "BIGINT UNSIGNED"
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "number"
+    },
+    "cardNo": {
+      "type": "string"
+    },
+    "idCardNo": {
+      "type": "string"
+    },
+    "temperature": {
+      "type": "string"
+    },
+    "mask": {
+      "type": "number"
+    },
+    "passType": {
+      "type": "boolean",
+      "default": false
+    },
+    "totalFaceNumber": {
+      "type": "number"
+    },
+    "totalPeopleNumber": {
+      "type": "number"
+    },
+    "extra": {
+      "type": "string"
+    },
+    "groupId": {
+      "type": "number"
+    },
+    "checkPic": {
+      "type": "string",
+      "mysql": {
+        "columnName": "checkPic",
+        "dataType": "TEXT"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

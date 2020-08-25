@@ -1,0 +1,52 @@
+{
+  "name": "tb_auth_detail",
+  "plural": "tb_auth_detail",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "default": null
+    },
+    "person_id": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "vip_id": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "device_name": {
+      "type": "string",
+      "required": false
+    },
+    "device_mac": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "state": {
+      "type": "boolean",
+      "required": false
+    },
+    "err_msg": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "auth_id": {
+      "type": "number",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

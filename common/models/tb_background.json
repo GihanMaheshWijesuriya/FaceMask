@@ -1,0 +1,60 @@
+{
+  "name": "tb_background",
+  "plural": "tb_background",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "default": null
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "status": {
+      "type": "boolean",
+      "required": true,
+      "default": 0
+    },
+    "gmt_created": {
+      "type": "date",
+      "required": false,
+      "default": "1970-01-01 00:00:00"
+    },
+    "gmt_modified": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "oss_picture_url": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "picture_url": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "number": {
+      "type": "number",
+      "required": false,
+      "default": 0
+    },
+    "picture_id": {
+      "type": "string",
+      "required": true,
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

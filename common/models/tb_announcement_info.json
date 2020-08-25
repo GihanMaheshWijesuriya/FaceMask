@@ -1,0 +1,64 @@
+{
+  "name": "tb_announcement_info",
+  "plural": "tb_announcement_info",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "default": null
+    },
+    "annc_title": {
+      "type": "string",
+      "required": false,
+      "default": null
+    },
+    "annc_content": {
+      "type": "string",
+      "required": true
+    },
+    "gmt_created": {
+      "type": "date",
+      "required": false,
+      "default": "1970-01-01 00:00:00"
+    },
+    "status": {
+      "type": "number",
+      "required": false,
+      "default": 0
+    },
+    "gmt_modified": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "gmt_deleted": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "create_user_Id": {
+      "type": "number",
+      "required": true,
+      "default": null
+    },
+    "gmt_published": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "gmt_undo": {
+      "type": "date",
+      "required": true,
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

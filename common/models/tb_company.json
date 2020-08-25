@@ -1,0 +1,48 @@
+{
+  "name": "tb_company",
+  "plural": "tb_company",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "default": null
+    },
+    "code": {
+      "type": "string",
+      "required": false
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": null
+    },
+    "manager_login_id": {
+      "type": "string",
+      "required": false
+    },
+    "gmt_created": {
+      "type": "date",
+      "required": false,
+      "default": "1970-01-01 00:00:00"
+    },
+    "gmt_modified": {
+      "type": "date",
+      "required": true,
+      "default": null
+    },
+    "status": {
+      "type": "number",
+      "required": false,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
